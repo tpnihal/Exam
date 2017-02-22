@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+function countryl(value)
+	{
+		list="<select>";
+		var countries = 
+		{   'ind':{'st1':'kerala','st2':'bihar','st3':'punjab'},
+			'usa':{'sp1':'gsf','sp2':'ddd','sp3':'ssh'},
+			'rus':{'sp1':'eee','sp2':'rrr','sp3':'ddd'}
+		}; 
+
+
+for (country in countries)
+	{
+    	if (country==value) 
+    		{
+    			selectedCountry=countries[country];
+    			
+for (states in selectedCountry)
+	{
+
+					//alert(selectedCountry[states]);
+					list+="<option>"+selectedCountry[states]+"</option>";
+
+					
+						}
+				}
+		}
+		document.getElementById('states').innerHTML=list+="</select>";
+
+}
+</script>
+</head>
+<body>
+
+<select onchange="countryl(this.value)">
+	<option>country</option>
+	<option value="ind">india</option>
+	<option value="rus">rassia</option>
+	<option value="usa">usa</option>
+</select>
+
+<div id="states" style="margin-left: 100px;border-color: red">
+</div>
+</body>
+</html>
+

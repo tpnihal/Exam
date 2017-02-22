@@ -1,0 +1,299 @@
+		body {
+			margin:auto;
+		}
+
+		#background {
+			background-color:#4867aa;
+			position: relative;
+			height: 82px;
+			margin: 0;
+
+		
+			
+		}
+		#tx
+		{
+			font-family: helvetica;
+			font-size: 12px;
+			
+			color:white;
+			
+
+		
+		}
+		#email_error
+		{
+
+		}
+		#form
+		{
+			padding-top: 10px;
+			margin-left:850px;
+			margin-bottom:20px;
+			position:static;
+			top: 20px;
+
+		}
+		#fbimg
+		{
+			margin-right: 850px;
+			position: absolute;
+			top: 10px;
+			left: 175px;
+			
+		}
+		.input
+		{
+			border-radius:2px; 
+			border:1px solid #1d2a5b; 
+			margin:0; 
+			width: 130px;
+			
+		}
+		.btnlog
+		{
+			background-color: #4267b2;
+			border-radius:2px;
+			color:white;
+			cursor:pointer;
+			border:1px solid #1d2a5b;
+
+		}
+		#forgot
+		{
+			 color:#9ca8c2;
+			padding-top: 5px;
+			font-family: helvetica;
+			font-size: 13px;
+			margin: auto;
+			margin-left: 145px;
+			/*margin-bottom:200px;*/
+			
+		}
+a:link {
+    text-decoration: none;
+   
+}
+
+
+a:hover {
+    text-decoration: underline;
+     color: white;
+}
+		#row2{
+			background-color:#e2e6f0;
+
+		}
+
+		#fbp
+	{
+		width: auto;
+		margin: auto;
+		margin-bottom: 100%;
+		/*background-color:#dde1ed*/
+		}
+		#fbtext
+		{
+	color: #0e385f;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 450px;
+    margin-left: 150px;
+    font-family: sans-serif;
+		}
+		#input
+		{
+		
+			margin-left: 850px;
+			position: absolute;
+			margin-top: -30px;
+			
+			
+		}
+
+		.secback
+		{
+			background:linear-gradient(white, #D3D8E8);
+		}	
+		#creacc
+		{
+			font-size: 38px;
+			font-weight:bold;
+			line-height:75px;
+		}
+		#divacc
+		{
+			height: 115px;
+			font-family:sans-serif;
+		}
+		.box1
+		{
+			
+			height: 39px;
+			border-radius: 5px;
+			font-family: helvetica;
+			font-size: 18px;
+			border:1px solid #bdc7d8;
+			padding-left:12px;
+			width: 35%;
+		}
+		.box2
+		{
+
+			height: 39px;
+			width: 97%;
+			border-radius: 5px;
+			font-family: helvetica,arial,sans-serif;
+			font-size: 18px;
+			border:1px solid #bdc7d8;
+			padding-left:12px;
+
+			
+
+		}
+		.db
+		{
+			width: 15%;
+
+			height: 30px;
+			font-size: 15px;
+			border:1px solid #bdc7d8;
+			border-radius: 3px
+
+		}
+		.dbmsg
+		{
+			color:#7d89ca;
+			font-size: 12px;
+			margin-left: 5px;
+			float: right;
+			margin-right:80px;
+			line-height: 13px;
+		}
+
+	#dbmsg
+	{
+		
+	 color: #777;
+    font-size: 12px;
+    width: 316px; 
+
+	}
+	.radio
+	{
+		font-size: 25px;
+		font-family: sans-serif;
+
+
+
+		
+	}
+	.btn
+	{
+
+		font-family:sans-serif;
+		width: 50%;
+		height: 40px;
+		font-size: 22px;
+		background-color:#63a551;
+		border:1px solid black;
+		color: white;
+		border-radius: 4px;
+		padding-left: 3px;
+		    box-shadow: inset 1px 2px 2px #a4e388;
+		    font-weight: bold !important;
+    letter-spacing: normal;
+    text-rendering:optimizeLegibility;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+
+
+	}
+	.btn:link{
+    text-decoration: none;
+   
+}
+
+
+.btn:hover{
+      background: linear-gradient(#578843,#67ae55);
+          
+	}
+	.lstmsg
+	{
+		font-size: 13px;
+		font-weight:bold;
+	    color: #777;
+		
+	}
+	.color
+	{
+		color:#7d89ca;
+	}
+	.lang
+	{
+		display: list-item;
+	}
+	.list
+	{
+		background-color: 
+	}
+	#footer
+	{
+		
+		
+		padding-top: 8px;
+		
+	}
+	#ul
+	{
+	
+border-bottom: 1px solid  #365899;
+margin-top: -10px;
+padding-left: 0;
+padding-bottom: 15px;
+margin-right: 230px;
+font-family: sans-serif;
+color: #365899;
+font-size: 13px;
+	}
+	#ul2
+	{
+		
+		
+	float: left;
+	margin-left: 0px;
+	font-family: sans-serif;
+	color: #365899;
+	font-size: 13px;
+
+
+	}
+
+
+li{
+	display: inline;
+	padding-right: 10px;
+  }
+  /*
+<div class="row">
+	<div class="col-xs-12 col-sm-12 hidden-md hidden-lg"> 
+		<div class="row">
+			<form role="form" method="post" action="">
+				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
+					Emai or Phone<br>
+					<input type="text" name="ename" class="form-control">
+				</div>
+				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
+					Password<br>
+					<input type="text" name="ename" class="form-control"><br>
+					<a href="#">forgotten account?</a>
+				</div>
+				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
+					<p>
+					<button type="submit" class="btn btn-primary" style="width: 100%"></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div> xs 2row close*/

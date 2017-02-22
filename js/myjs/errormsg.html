@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+
+	function myfun()
+
+	{
+	x=document.getElementsByName('abc')[0].value;
+
+	if (x.length<=0) 
+	{
+		document.getElementById('error').innerHTML="try a again";
+
+	}
+	else
+		{
+			document.getElementById('error').innerHTML="";
+		}
+}
+</script>
+<style type="text/css">
+	#error{
+		color: red;
+		font-family: sans-serif;
+	}
+</style>
+</head>
+	<body>
+		<form name="box">
+			<input type="text"  name="abc"><label id="error"></label>
+		
+			<br>
+			<button  onclick="myfun()" type="button">submit</button>
+	
+		</form>
+
+	</body>
+</html>

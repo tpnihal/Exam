@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>formsite</title>
+	<style type="text/css">
+		.back
+		{
+			font-size: 20px;
+			background-color: silver;
+			width: auto;
+			margin-right: 200px;
+			margin-left: 200px;
+
+
+		}
+		#lbldob
+		{
+			color: red;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+	
+
+function valid()
+{
+  	a=document.getElementById('fname').value;
+  	if (a.length==0) {
+  	document.getElementById('lblname').innerHTML="name must be required";
+	}
+  	{
+	document.getElementById('lblname').innerHTML="only alphaets ";
+	}
+	else
+	{
+	document.getElementById('lblname').innerHTML="";
+    }
+  
+  /* username box*/
+
+  		 b=document.getElementById('pwd').value;
+		if ((b.length<=8)||(b.length>=13))
+		 {
+		   document.getElementById('lblpwd').innerHTML="given password invalid";
+		 }
+	 	else
+		 {
+		  document.getElementById('lblpwd').innerHTML="";
+		 }
+	/* password  box*/
+
+	/*date of birth*/
+	   d  =document.getElementById('dob').value;
+	   d  =new Date(d);
+	today = new Date();
+    minAge= 13;
+    age   = _calcAge(d,today);
+
+    	if ((age < minAge)||(!(d>=0)) )
+    		
+    		{
+           	document.getElementById("lbldob").innerHTML="age must required and it should be above 13 ";
+        	return false;
+			} 
+			/*
+        else if (!(d>=0))
+        	{
+        	document.getElementById("lbldob").innerHTML="pls given date!!!!";
+        	}*/
+
+        else
+     	{
+           document.getElementById("lbldob").innerHTML="";
+     	}
+
+    
+ }
+
+  function _calcAge(birthDate, today)
+			   {
+			         years = (today.getFullYear() - birthDate.getFullYear());
+			         return years;
+			    }
+
+
+
+
+</script>
+
+</head>
+
+<body >
+<center>
+	<form  name="frm" class="back">
+		<h1 ><font color="yellow"> form validation</font></h1>
+
+ 		<input type="text" id="fname"   placeholder="enter name" ><br>
+  		<label id="lblname"></label><br>
+  		<input type="password" id="pwd" placeholder="give passsword" ><br><label id="lblpwd"></label>
+  		<label id="lbl"></label><br>
+
+ <br>
+  		<b>Gender :</b>
+		<input type="radio" name="a" value="male" checked="male" >male
+		<input type="radio" name="a" value="female">female<br><br>
+		<input type="date" name=dob id="dob"><br><label id="lbldob"></label><br>
+		<center>
+		<button type="button"  onclick="valid()"> go here</button>
+		</center>
+		<br><bR>
+		 
+	
+	</form>
+</center>
+</body>
+</html>
+
+<!--create a form?
+		user name
+		passwd
+		gendr rd btn
+		dob
+		all field are mndtry
+		usr name shoud contn letters dont submit if nbrs
+		passwd min 8 max 13
+		gndr one is selected
+		dob if enter check age is min 13....-->

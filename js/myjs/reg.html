@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registarion</title>
+	<script type="text/javascript">
+	function print()
+	{
+		var a=document.reg.fname.value;
+		if (a.length<3) 
+		{
+			alert("min 3 charecter");
+		}
+		else
+		{
+			alert("sucsess")
+		}
+
+	}
+
+
+</script>
+</head>
+<body>
+
+
+<form name="reg">
+	<input type="text" name="fname">
+	<button  onclick="print()">button
+	</button>
+
+	
+</form>
+
+</body>
+</html>

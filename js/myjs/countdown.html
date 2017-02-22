@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+function CallFun(){
+x=parseInt(document.getElementById('text').value);
+id=setInterval(function(){
+		if (x<=0) 
+			{
+
+			document.getElementById('ans').innerHTML="time out";
+			clearInterval(id);
+			return(false);
+
+			}
+		
+
+		else if(x>0)
+			{
+
+				document.getElementById('ans').innerHTML=x;
+			}
+		
+	x--;
+	},1000);
+
+
+}
+
+
+
+
+</script>
+<style type="text/css">
+	#ans
+	{
+		color: red;
+		font-size: 200px;
+		font-family: fantasy;
+		border-color: black;
+
+	}
+</style>
+</head>
+<body>
+<form>
+<input type="text" id="text"><label id="ans"></label>
+<button type="button" onclick="CallFun()">start timer</button>
+</form>
+</body>
+</html>
+
+// function countFun(x){
+
+// 	if (x<=0) 
+// 			{
+// 			document.getElementById('ans').innerHTML="time out";
+// 			}
+
+// 		else if(x>0)
+// 			{
+
+// 				document.getElementById('ans').innerHTML=x;
+// 			}
+// 			else
+// 			{
+// 				document.getElementById('ans').innerHTML=""  ;
+// 			}

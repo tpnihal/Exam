@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<input type="text" id="value" name="">
+	<button onclick="timer()">click</button>
+	<span id="value2"></span>
+
+	<script type="text/javascript">
+	function timer() {
+		// var i = 15;
+		var i = parseInt(document.getElementById('value').value);
+		// var i = Number(j);
+		 setInterval(function () {
+			document.getElementById('value2').innerHTML = i--;
+			if(i<0) {
+				document.getElementById('value2').innerHTML = "time out";
+			}
+		},1000);
+	}
+	</script> 
+</body>
+</html>
